@@ -27,9 +27,11 @@ ul {
   padding: 0;
 }
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
   outline: 2px solid tomato;
 }
 /* outline: 2px solid tomato; */
@@ -88,6 +90,9 @@ body {
   color: var(--logo-bg-white-color);
 }
 /*Навигация */
+.site-nav {display: flex;
+
+}
 .nav-link,
 .contacts-link {
   font-weight: 500;
@@ -104,6 +109,7 @@ body {
   text-decoration: none; 
   list-style: none;
 }
+.contacts-nav-menu {display: inline-block; display: flex;}
 .current {color: var(--accent-color);}
 /*Герой*/
 .hero,
@@ -132,6 +138,7 @@ body {
   background-color: var(--accent-color);
   color: var(--logo-bg-white-color);
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -192,6 +199,7 @@ outline: 2px solid tomato;
   text-align: center;
 }.team-item {
   color: var(--title-text-color);
+  background-color: var(--logo-bg-white-color)
 }
 .menu-team {display: flex;}
 .card {
@@ -201,7 +209,7 @@ outline: 2px solid tomato;
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
 overflow: hidden;
-background-color: var(--logo-bg-white-color)
+
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 outline: 2px solid tomato;
 }
@@ -240,13 +248,19 @@ outline: 2px solid tomato;
 }
 /* Кнопки */
 .button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
+margin-right: 8px;
   display: inline-block;
   border: 1px solid transparent;
-  border-radius: 4px;
+  
   color: var(--logo-bg-white-color);
   background-color: var(--accent-color);
   text-align: center;
   cursor: pointer;
+  
 }
 .button-primary,
 .button-secondary {
@@ -259,11 +273,13 @@ outline: 2px solid tomato;
 .button-primary:focus {
   background-color: var(--button-bg-color);
   color: var(--title-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-secondary:hover,
 .button-secondary:focus {
   color: var(--logo-bg-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-secondary {
   color: var(--title-text-color);
