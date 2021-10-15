@@ -10,6 +10,29 @@
   --button-bg-color: #f5f4fa;
   --work-bg-color: #e5e5e5;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+/* outline: 2px solid tomato; */
 body {
   background-color: var(--logo-bg-white-color);
   color: var(--title-text-color);
@@ -56,6 +79,7 @@ body {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
+  outline: 2px solid tomato;
 }
 .accent-logo {
   color: var(--logo-black-color);
@@ -131,7 +155,26 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work-menu {
+  display: flex;
+}
+.wokr-card {
+  max-width: 370px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  
+  
+outline: 2px solid tomato;
+}
+.work-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  display: block;
 }
 .text-submite {
   line-height: 1.71;
@@ -141,23 +184,52 @@ body {
 .team {
   background-color: var(--secondary-bg-color);
 }
-.team-item {
-  color: var(--title-text-color);
-}
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
+  text-align: center;
+}.team-item {
+  color: var(--title-text-color);
+}
+.menu-team {display: flex;}
+.card {
+  max-width: 270px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+overflow: hidden;
+background-color: var(--logo-bg-white-color)
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+outline: 2px solid tomato;
+}
+/* .card:last-child) {
+  margin-right: 15px;
+}  */
+.card-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  display: block;
 }
 .team-heading {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+}
+.team-heading:last-child {
+  margin-bottom: 0;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-text-color);
+  margin: 0;
+  text-align: center;
 }
 
 /*Портфолио*/
