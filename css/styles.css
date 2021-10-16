@@ -89,7 +89,7 @@ body {
 }
 .header { 
   border-bottom: 1px solid 
-  border-color: (var(--border-header));    
+  border-color: var(--border-header);    
 }
 .navigation {
   display: flex;
@@ -116,10 +116,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--title-text-color)
-  text-decoration: none;
-  list-style: none;
+  /* text-decoration: none;
+  list-style: none; */
 }
 .contacts-nav, .contacts-link { 
   color: var(--primary-text-color);
@@ -149,6 +148,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  margin-bottom: 94px;
 }
 .hero-title {  
   width: 696px;
@@ -188,11 +188,26 @@ body {
 .work-list {
   list-style: none;
 }
+.features-menu {display: flex; 
+  justify-content: center;
+  padding: 0;
+}
+.features-item {
+  max-width: 270px;
+}
+.features-menu .features-item:not(:last-child) {
+  margin-right: 30px;
+margin-bottom: 94px;}
 .text-title {
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
+.text-submit {
+  line-height: 1.71;
+  color: var(--primary-text-color)}
+
 /*Чем мы занимаемся*/
 .work-title {
   font-weight: 700;
@@ -203,15 +218,19 @@ body {
 }
 .work-menu {
   display: flex;
+  text-align: center;
+margin: 0px;
+padding: 0px;
+height: 386px;
 }
-.wokr-card {
+.wokr-image {
+  display: flex;
   max-width: 370px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  
-  
 outline: 2px solid tomato;
 }
+.work-menu .work-image:not(:last-child) {
+  margin-right: 30px;
+margin-bottom: 94px;}
 .work-image {
   max-width: 100%;
   height: auto;
@@ -288,7 +307,6 @@ outline: 2px solid tomato;
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
-
 margin-right: 8px;
   display: inline-block;
   border: 1px solid transparent;
