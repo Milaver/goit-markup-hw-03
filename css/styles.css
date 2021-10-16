@@ -9,6 +9,7 @@
   --secondary-bg-color: #f5f4fa;
   --button-bg-color: #f5f4fa;
   --work-bg-color: #e5e5e5;
+  --border-header: #ECECEC;
 }
 
 h1,
@@ -23,8 +24,6 @@ ul {
   padding: 0;
 }
 .container {
-
-  
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -88,25 +87,22 @@ body {
 .footer .accent-logo {
   color: var(--logo-bg-white-color);
 }
-/* header {
-    
-  border-bottom: 1px solid;    
-  border-color: var(--bottom-line-header);
-} */
+.header { 
+  border-bottom: 1px solid 
+  border-color: (var(--border-header));    
+}
 .navigation {
   display: flex;
   align-items: center;
 }
 /*Навигация */
-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
-
 .site-nav {display: flex;
 }
 .site-nav .nav-item:not(:last-child) {
-
   margin-right: 50px;
 }
 .site-nav .nav-item {
@@ -135,26 +131,37 @@ nav {
   margin-left: auto;
 } 
 .contacts-nav-menu .contacts-item + .contacts-item {
-
+  
   margin-left: 50px;
 }
 .current {color: var(--accent-color);}
+
 /*Герой*/
 .hero,
 .footer {
   background-color: var(--hero-footer-bg-color);
 }
-.hero-title {
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  margin-top: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.hero-title {  
+  width: 696px;
+  height: 120px;
+  margin: 0 auto 30px auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--logo-bg-white-color);
 }
 .hero-button {
-  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -162,6 +169,7 @@ nav {
   cursor: pointer;
   border: transparent;
   padding: 10px 32px;
+  min-height: 50px;
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--logo-bg-white-color);
