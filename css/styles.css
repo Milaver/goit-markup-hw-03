@@ -10,11 +10,7 @@
   --button-bg-color: #f5f4fa;
   --work-bg-color: #e5e5e5;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 h1,
 h2,
 h3,
@@ -27,15 +23,17 @@ ul {
   padding: 0;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
+
+  
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   outline: 2px solid tomato;
 }
 /* outline: 2px solid tomato; */
 body {
+  margin: 0 auto;
   background-color: var(--logo-bg-white-color);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
@@ -80,6 +78,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  margin-right: 93px;
   text-decoration: none;
   outline: 2px solid tomato;
 }
@@ -89,9 +88,31 @@ body {
 .footer .accent-logo {
   color: var(--logo-bg-white-color);
 }
+/* header {
+    
+  border-bottom: 1px solid;    
+  border-color: var(--bottom-line-header);
+} */
+.navigation {
+  display: flex;
+  align-items: center;
+}
 /*Навигация */
-.site-nav {display: flex;
+nav {
+  display: flex;
+  align-items: center;
+}
 
+.site-nav {display: flex;
+}
+.site-nav .nav-item:not(:last-child) {
+
+  margin-right: 50px;
+}
+.site-nav .nav-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-link,
 .contacts-link {
@@ -109,7 +130,14 @@ body {
   text-decoration: none; 
   list-style: none;
 }
-.contacts-nav-menu {display: inline-block; display: flex;}
+.contacts-nav-menu {
+  display: flex;
+  margin-left: auto;
+} 
+.contacts-nav-menu .contacts-item + .contacts-item {
+
+  margin-left: 50px;
+}
 .current {color: var(--accent-color);}
 /*Герой*/
 .hero,
@@ -126,7 +154,7 @@ body {
   color: var(--logo-bg-white-color);
 }
 .hero-button {
-  font-family: inherit;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -197,25 +225,26 @@ outline: 2px solid tomato;
   line-height: 1.17;
   margin-bottom: 50px;
   text-align: center;
-}.team-item {
+} 
+.team-item {
   color: var(--title-text-color);
-  background-color: var(--logo-bg-white-color)
+  background-color: var(--logo-bg-white-color);
 }
 .menu-team {display: flex;}
+.card:not(:last-child) {
+  
+} 
 .card {
   max-width: 270px;
   margin-bottom: 30px;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
 overflow: hidden;
-
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 outline: 2px solid tomato;
 }
-/* .card:last-child) {
-  margin-right: 15px;
-}  */
+
 .card-image {
   max-width: 100%;
   height: auto;
