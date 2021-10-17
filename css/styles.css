@@ -117,11 +117,11 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color)
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--title-text-color)
 }
 .contacts-nav, .contacts-link { 
   color: var(--primary-text-color);
@@ -369,45 +369,30 @@ margin-right: 8px;
   letter-spacing: 0.06em;
 }
 /*Футер*/
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: var(--hero-footer-bg-color);
 }
-
 .footer .logo {
   color: var(--accent-color);
 }
-
-.address .link {
-  color: var(--logo-bg-white-color);
-}
 .address {
-  font-style: normal;
-  width: 231px;
   margin-top: 20px;
- 
- outline: 2px solid tomato;
-}
-.address-menu {
-  
-  list-style: none;
-}
-.link-map { 
-  margin-bottom: 9px;
-
-}
-.link-map,
-.footer-link {
-  
-  line-height: 1.71;
-  text-decoration: none;
+  font-style: normal; 
+  font-size: 14px;
+  line-height: 1.71; 
+  outline: 2px solid tomato;
 }
 .address .link-map {
   color: var(--logo-bg-white-color);
-}
-.footer-link {
-  height: 21px;
-  margin-bottom: 9px;
+  text-decoration: none;
+  outline: 2px solid tomato;
+}.address-menu .footer-link {
+  display: block;
+  margin-top: 9px;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-}
+  }
