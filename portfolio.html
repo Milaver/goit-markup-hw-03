@@ -26,7 +26,9 @@
               <a href="./index.html" class="nav-link link">Студия</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link current link">Портфолио</a>
+              <a href="./portfolio.html" class="nav-link current link"
+                >Портфолио</a
+              >
             </li>
             <li class="nav-item">
               <a href="" class="nav-link link">Контакты</a>
@@ -49,133 +51,159 @@
     </header>
 
     <main>
-      <section>
-        <ul class="filter list">
-          <li class="filter-item">
-            <button type="button" class="button button-primary">Все</button>
-          </li>
-          <li class="filter-item">
-            <button type="button" class="button button-secondary">
-              Веб-сайты
-            </button>
-          </li>
-          <li class="filter-item">
-            <button type="button" class="button button-secondary">
-              Приложения
-            </button>
-          </li>
-          <li class="filter-item">
-            <button type="button" class="button button-secondary">
-              Дизайн
-            </button>
-          </li>
-          <li class="filter-item">
-            <button type="button" class="button button-secondary">
-              Маркетинг
-            </button>
-          </li>
-        </ul>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="filter list">
+            <li class="filter-item">
+              <button type="button" class="button button-primary">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button button-secondary">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button button-secondary">
+                Приложения
+              </button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button button-secondary">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button button-secondary">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
 
-        <!-- Примеры работ -->
-        <ul class="work-list">
-          <li>
-            <img
-              src="./images/portfolio/web-site.jpg"
-              alt="Веб-сайт Технокряк"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">Технокряк</h2>
-            <p class="text-portfolio">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/poster.jpg"
-              alt="Постер New Orlean vs Golden Star"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">
-              Постер <span lang="en">New Orlean vs Golden Star</span>
-            </h2>
-            <p class="text-portfolio">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/restaurant.jpg"
-              alt="Ресторан Seafood"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">Ресторан Seafood</h2>
-            <p class="text-portfolio">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/project-prime.jpg"
-              alt="Проект Prime"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">Проект <span lang="en">Prime</span></h2>
-            <p class="text-portfolio">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/project-boxes.jpg"
-              alt="Проект Boxes"
-            />
-            <h2 class="title-portfolio">Проект <span lang="en">Boxes</span></h2>
-            <p class="text-portfolio">Приложение</p>
-          </li>
-          <li>
-            ><img
-              src="./images/portfolio/inspiration-has-no-border.jpg"
-              alt="Inspiration has no Borders"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio" lang="en">
-              Inspiration has no Borders
-            </h2>
-            <p class="text-portfolio">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/limited-edition.jpg"
-              alt="Издание Limited Edition"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">
-              Издание <span lang="en">Limited Edition</span>
-            </h2>
-            <p class="text-portfolio">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/lab.jpg"
-              alt="Проект LAB"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">Проект <span lang="en">LAB</span></h2>
-            <p class="text-portfolio">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/gruving-business.jpg"
-              alt="Growing Business"
-              width="370"
-              height="294"
-            />
-            <h2 class="title-portfolio">Growing Business</h2>
-            <p class="text-portfolio">Приложение</p>
-          </li>
-        </ul>
+          <!-- Примеры работ -->
+          <ul class="work-list">
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/web-site.jpg"
+                alt="Веб-сайт Технокряк"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">Технокряк</h2>
+                <p class="text-portfolio">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/poster.jpg"
+                alt="Постер New Orlean vs Golden Star"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="text-portfolio">Дизайн</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/restaurant.jpg"
+                alt="Ресторан Seafood"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">Ресторан Seafood</h2>
+                <p class="text-portfolio">Приложение</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/project-prime.jpg"
+                alt="Проект Prime"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="text-portfolio">Маркетинг</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/project-boxes.jpg"
+                alt="Проект Boxes"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
+                <p class="text-portfolio">Приложение</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/inspiration-has-no-border.jpg"
+                alt="Inspiration has no Borders"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="text-portfolio">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/limited-edition.jpg"
+                alt="Издание Limited Edition"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="text-portfolio">Дизайн</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/lab.jpg"
+                alt="Проект LAB"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">
+                  Проект <span lang="en">LAB</span>
+                </h2>
+                <p class="text-portfolio">Маркетинг</p>
+              </div>
+            </li>
+            <li class="work-list-item">
+              <img class="work-portfolio-image"
+                src="./images/portfolio/gruving-business.jpg"
+                alt="Growing Business"
+                width="370"
+                height="294"
+              />
+              <div class="description-card-wrapper">
+                <h2 class="title-portfolio">Growing Business</h2>
+                <p class="text-portfolio">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    
+
     <!--Футер-->
     <footer class="footer">
       <a class="logo" href="./index.html" lang="en">
