@@ -390,9 +390,6 @@ margin-bottom: 94px;}
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 }
-
-/*Футер*/
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -401,6 +398,7 @@ margin-bottom: 94px;}
 }
 .footer .logo {
   color: var(--accent-color);
+  margin-bottom: 20px;
 }
 .address {
   margin-top: 20px;
@@ -409,14 +407,9 @@ margin-bottom: 94px;}
   line-height: 1.71; 
 }
 .address .link-map {
-  /* width: 231px;
-  height: 21px; */
   color: var(--logo-bg-white-color);
   text-decoration: none;
 }
-/* .link-map {
-  width: 231px;
-  height: 21px;} */
 .address-menu .footer-link {
   display: block;
   margin-top: 9px;
