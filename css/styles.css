@@ -48,10 +48,10 @@ body {
 .contacts-link:focus,
 .site-nav .link:hover,
 .site-nav .link:focus 
-.link-map-hf:hover,
-.link-map-hf:focus,
-.footer-link-hf:hover,
-.footer-link-hf:focus {
+.address .link-map:hover,
+.address .link-map:focus,
+.address-menu .footer-link:hover,
+.address-menu .footer-link:focus {
   color: var(--accent-color);
 }
 .link.current {
