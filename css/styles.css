@@ -99,6 +99,10 @@ body {
   display: flex;
   align-items: center;
 }
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -130,7 +134,8 @@ body {
   margin-left: auto;
 }
 .contacts-nav-menu .contacts-item:not(:last-child) {
-  margin-right: 50px;}
+  margin-right: 50px;
+}
 .current {
   color: var(--accent-color);
 }
@@ -240,7 +245,6 @@ body {
 }
 .work-image {
   display: block;
-  /* margin-right: 30px; */
   height: auto;
 }
 .text-submite {
@@ -249,14 +253,13 @@ body {
 }
 /*Наша команда*/
 .team {
-  margin-bottom: 0;
-  min-height: 648px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   background-color: var(--secondary-bg-color);
 }
 .team-title {
   min-height: 42px;
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -265,26 +268,22 @@ body {
 }
 .menu-team {
   display: flex;
-  /* justify-content: space-between; */
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  min-height: 368px;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 .team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
   background-color: var(--logo-bg-white-color);
   width: 270px;
-  height: 368px;
   border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-item-card {
-  padding: 30px;
-}
-.team-item:not(:last-child) {
-  margin-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .card-image {
   display: block;
@@ -370,19 +369,21 @@ body {
 .work-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
   list-style: none;
 }
 .work-list-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
   margin-bottom: 30px;
 }
-.work-list-item:nth-child(3n) {
+/* .work-list-item:nth-child(3n) {
   margin-right: 0;
 }
 .work-list-item:nth-last-child(- n + 3) {
   margin-bottom: 0;
-}
+} */
 .work-portfolio-image {
   display: block;
 }
