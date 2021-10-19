@@ -73,9 +73,6 @@ body {
 }
 /* Шапка сайта */
 .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -315,18 +312,26 @@ body {
 .filter {
   display: flex;
   justify-content: center;
-  min-height: 54px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   list-style: none;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.text-portfolio {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
 /* Кнопки */
 .button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 1.63;
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
-  margin-right: 8px;
-  display: inline-block;
-  /* border: 1px solid transparent; */
+  /* display: inline-block; */
   border: none;
   color: var(--logo-bg-white-color);
   background-color: var(--accent-color);
@@ -358,11 +363,7 @@ body {
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
 }
-.text-portfolio {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--primary-text-color);
-}
+
 /* Наши роботы */
 
 .work-list {
@@ -403,23 +404,24 @@ body {
 
   background-color: var(--hero-footer-bg-color);
 }
-.footer .logo {
+.footer-logo {
+  display: block;
   color: var(--accent-color);
   margin-bottom: 20px;
 }
 .address {
-  margin-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address .link-map {
   color: var(--logo-bg-white-color);
   text-decoration: none;
 }
 .address-menu .footer-link {
-  display: block;
-  margin-top: 9px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
